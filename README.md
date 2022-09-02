@@ -5,20 +5,19 @@
 Пример кода: 
             
  ```sh
-            <Routes>
-            <Route path="/users" element={<UserPage/>}/>
-            <Route path="/todos" element={<TodosPage/>}/>
-            <Route path="/user/:id" element={<UserItemPage/>}/>
-            <Route path="/todo/:id" element={<TodoItemPage/>}/>
-            <Route path="*" element={<div>NotFound</div>}/>
+<Routes>
+   <Route path="/users" element={<UserPage/>}/>
+   <Route path="/todos" element={<TodosPage/>}/>
+   <Route path="/user/:id" element={<UserItemPage/>}/>
+   <Route path="/todo/:id" element={<TodoItemPage/>}/>
+   <Route path="*" element={<div>NotFound</div>}/>
 </Routes>
 ```
 
 5) Вместо useHistory используем useNavigate; 
 Пример кода: 
-             ```sh
+```sh
 const navigate = useNavigate();
 navigate("/users");
-
-</Routes>
+```
             
